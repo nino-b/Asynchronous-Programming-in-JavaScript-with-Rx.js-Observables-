@@ -514,9 +514,6 @@ To solve problems, we need to take four steps:
 | `ajax.getJSON` | Sends an HTTP GET request to specified URL (like `fetch()` in JS). Returns an Observable. It is the result of whatever we get back from the server, parsed as JSON. It is an Observable with One Value in it. So `onCompleted()` comes right after JSON object, because this Observable has only one value. |
 | `throttle(<Time Interval>)` | Ensures that an event handler is executed at most once in a specified time interval. It takes an item, waits for the specified time. If after that time another item comes, it drops the old item and takes a new one. And if after the specified time it doesn't get another item, it forwards the current item that it is holding. |
 | `retry(<How Many Times to Retry>)` | Used to resubscribe to the Source Observable after an error has occured. It will call `forEach()` maximum as many times as it is specified. |
-| `` |  |
-| `` |  |
-| `` |  |
 
 
 
